@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @font-face {
+    font-family: redhands;
+    src: url(KGRedHands.ttf);
+}
+@font-face {
+    font-family: redhandsoutline;
+    src: url(KGRedHandsOutline.ttf);
+}
+@font-face {
+    font-family: Sequel;
+    src: url(Sequel-Regular.ttf);
+}
+        h1 {
+            color: #e0fbfc;
+            letter-spacing: 3px;
+        }
+
+        body {
+            font-family: redhands;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #607d8b;
+        }
+
+        header {
+            background-color: #326395;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        .classic {
+            font-family: Arial, sans-serif;
+        }
+        .sequel {
+            font-family: Sequel;
+            letter-spacing: 3px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 1em;
+        }
+
+        .navbar a {
+            font-weight: 600;
+            font-size:larger;
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #033168;
+        }
+
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+
+        section {
+            margin: 2em 0;
+        }
+
+        footer {
+            background-color: #326395;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .collapsible-section {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .collapsible {
+            font-family: redhands;
+            background-color: #6699CC;
+            color: white;
+            cursor: pointer;
+            padding: 1em;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.25em;
+            transition: background-color 0.3s ease;
+        }
+
+        .collapsible:hover {
+            background-color: #326395;
+        }
+
+        .content {
+            padding: 0 1em;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        #container{
+            width: 100%;
+
+        }
+        #floated{
+            padding: 1%;
+            float: left;
+            width: 300px;
+
+        }
+
+        #container p {
+            font-size:140%;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sections</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Cup.html" class="sequel">Digital Self</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="classic">
+            <h1>Tips and Recommendations</h1>
+        </section>
+
+        <!-- collapsible part to kung gusto mo tanggalin pwede naman -->
+        <!-- content yung para maayos format, kung tatanggalin collapsible, content gagamitin majority -->
+
+        <section id="about" class="collapsible-section">
+            <h1>Online Safety</h1>
+            <button class="collapsible">Best Practices for Online Safety</button>
+            <div class="content">
+                <div id="container">
+                    <p>
+                        <ul>
+                            Best Practices for Online Safety
+                            
+                            <li>Be cautious about the amount of personal information you share online, including on social media.</li>
+                            <li>Consider the long-term impact of what you share online, as posts can be difficult to remove completely.</li>
+                            <li>In social media, only accept friend requests from people you know and trust.
+                            <li>Keep up-to-date with the latest online threats and safety practices.</li>
+                            <li>Share online safety tips with family members and friends, especially children and less tech-savvy individuals.</li>
+                            </ul>
+                            
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="collapsible-section">
+            <h1>Digital Footprint</h1>
+            <p> </p>
+            <button class="collapsible">Tips how to manage digital footprint</button>
+            <div class="content">
+                <p>Here is the list on how to manage Digital Footprints:
+                    <ul>
+                        <li>Regularly review and adjust privacy settings on social media and other online accounts to control who can see your information.</li>
+                    <li>Consider the long-term implications of your online posts, comments, and shares.</li>
+                    <li>Regularly search your name on search engines to see what information is publicly available about you.</li>
+                    <li>Periodically review your social media profiles and remove or update old posts and information.</li>
+                    <li>If possible, request the removal of outdated or unwanted content about you from websites and search engines.</li>
+                    </ul>
+                    </p>
+            </div>
+        </section>
+        <section id="contact" class="collapsible-section">
+            <h1>Improving Digital Skills</h1>
+            <button class="collapsible">Resources for Improving Digital Skills</button>
+            <div class="content">
+                <br>
+                Visit these websites:
+                <br>
+                <br>
+
+                <a href="https://www.coursera.org" target="_blank">Coursera</a>
+                <br>
+                <br>
+                <a href="https://www.edx.org" target="_blank">edX</a>
+                <br>
+                <br>
+                <a href="https://www.skillshare.com/en/" target="_blank">Skillshare</a>
+                <br>
+                <br>
+            </div>
+            </section>
+            <section id="relationship" class="collapsible-section">
+                <h1>Relationship with Technology</h1>
+                <button class="collapsible">Strategies for a Healthy Relationship with Technology</button>  
+                <div class="content">
+                    <p>
+                        <ul>
+                            Excessive use of technology, especially social media, can contribute to anxiety, stress, and depression. These strategies will help you mitigate these effects.
+                            <li>Be intentional about why and how you use technology. Avoid mindless scrolling or unnecessary app usage.</li>
+                            <li>Regularly assess how much time you spend on devices and adjust if necessary.</li>
+                            <li>Regularly review and adjust privacy settings on social media and other online accounts.</li>
+                            <li>Avoid sharing too much personal information online.</li>
+                            <li>Schedule regular breaks from technology, ranging from a few hours to a few days.</li>
+                            </ul>
+                            
+                    </p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <section id="relationship" class="collapsible-section">
+            <h1>References</h1>
+            <button class="collapsible">References used</button>  
+            <div class="content">
+                <p> What is Digital Wellness? - Citrix. (n.d.). Citrix.com. </p>
+                <a href="https://www.citrix.com/glossary/what-is-digital-wellness.html">https://www.citrix.com/glossary/what-is-digital-wellness.html"</a>
+                <p> Hughes, G. (2023, October 19). Five steps to healthy digital habits. </p>
+                <a href="https://studentspace.org.uk/wellbeing/five-steps-to-healthy-digital-habits">https://studentspace.org.uk/wellbeing/five-steps-to-healthy-digital-habits</a>
+                <p> Understanding your online identity an overview of identity. (n.d.). Internet Society.</p>
+                <a href="https://www.internetsociety.org/wp-content/uploads/2017/11/Understanding-your-Online-Identity-An-Overview-of-Identity.pdf">https://www.internetsociety.org/wp-content/uploads/2017/11/Understanding-your-Online-Identity-An-Overview-of-Identity.pdf
+                </a>
+                <p> Philippine Institute For Development Studies. (n.d.). </p>
+                <a href="https://www.pids.gov.ph/details/fact-friday-on-digital-literacy-skills-of-filipinos#:~:text=A%20PIDS%20paper%20underscored%20the,for%20the%20Sustainable%20Development%20Goals.">https://www.pids.gov.ph/details/fact-friday-on-digital-literacy-skills-of-filipinos#:~:text=A%20PIDS%20paper%20underscored%20the,for%20the%20Sustainable%20Development%20Goals.
+                </a>
+                <p> Lagare, J. B. (2023, November 3). Cybersecurity awareness in PH needs improvement | Inquirer Business. INQUIRER.net. </p>
+                <a href="https://business.inquirer.net/429793/cybersecurity-awareness-in-ph-needs-improvement">https://business.inquirer.net/429793/cybersecurity-awareness-in-ph-needs-improvement </a>
+                <p> Simplilearn. (2024, June 25). Social media: Advantages and disadvantages. Simplilearn.com. </p>
+                <a href="https://www.simplilearn.com/real-impact-social-media-article"> https://www.simplilearn.com/real-impact-social-media-article</a>
+                <p> Sreenivas, S. (2023, May 5). Digital Detox: What to know. WebMD. </p>
+                <a href="https://www.webmd.com/balance/what-is-digital-detox"> https://www.webmd.com/balance/what-is-digital-detox
+                </a>
+                <p> Digital wellbeing | Childnet. (2021, December 16). Childnet. </p>
+                <a href="https://www.childnet.com/help-and-advice/digital-wellbeing/#:~:text=Digital%20wellbeing%20is%20about%20how,Physical%20health%20and%20wellbeing">https://www.childnet.com/help-and-advice/digital-wellbeing/#:~:text=Digital%20wellbeing%20is%20about%20how,Physical%20health%20and%20wellbeing</a>
+                <p>ReputationDefender. (2024, June 4). What is Online Reputation Management. ReputationDefender</p>
+                <a href="https://www.reputationdefender.com/what-online-reputation-management">https://www.reputationdefender.com/what-online-reputation-management</a>
+                <p>Aideen. (2019, March 25). Developing digital literacy skills -. Webwise.ie.</p>
+                <a href="https://www.webwise.ie/teachers/digital_literacy/">https://www.webwise.ie/teachers/digital_literacy/</a>
+                <p>Will Earp, South West Grid for Learning Trust Ltd. (n.d.). What is Online Safety? | SWGfL</p>
+                <a href="https://swgfl.org.uk/online-safety/what-is-online-safety/">https://swgfl.org.uk/online-safety/what-is-online-safety/</a>
+                <p>Pros and Cons of social media | Dalomba, F. (n.d.). Lifespan. </p>
+                <a href="https://www.lifespan.org/lifespan-living/social-media-good-bad-and-ugly#:~:text=The%20more%20time%20spent%20on,as%20well%20as%20you%20can">
+                    https://www.lifespan.org/lifespan-living/social-media-good-bad-and-ugly#:~:text=The%20more%20time%20spent%20on,as%20well%20as%20you%20can
+                </a>
+                <p> Newport Academy (2024, April 15). How to help teens unplug. </p>
+                <a href="https://www.newportacademy.com/resources/restoring-families/digital-detox">https://www.newportacademy.com/resources/restoring-families/digital-detox</a>
+                <p>Security National Bank. (n.d.). Internet safety tips for everyone who spends time online. </p>
+                <a href="https://www.snbsd.com/about/online-safety-guide">https://www.snbsd.com/about/online-safety-guide</a>
+                <p>Bouchrika, I. (2024, June 10). How To Manage Your Digital Footprint in 2024: 20 Tips for Students.</p>
+                <a href=" https://research.com/education/how-to-manage-digital-footprint">
+                    https://research.com/education/how-to-manage-digital-footprint
+                </a>
+                <p>Coursera Staff. (2023, November 16). How to improve your digital skills. Coursera</p>
+                <a href="https://www.coursera.org/articles/digital-skills">https://www.coursera.org/articles/digital-skills</a>
+                <p>10 Ways to Build a Healthy Relationship with Technology - Panda Security Mediacenter. (2023, September 7).</p>
+                <a href="https://www.pandasecurity.com/en/mediacenter/tech-relationship/">https://www.pandasecurity.com/en/mediacenter/tech-relationship/</a>
+
+    </main>
+
+    <script>
+        // script.js
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var coll = document.getElementsByClassName('collapsible');
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            }
+        });
+
+    </script>
+</body>
+</html>

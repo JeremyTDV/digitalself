@@ -12,10 +12,15 @@ body
     min-height: 100vh;
     background: #607d8b
 }
+@font-face {
+    font-family: Sequel;
+    src: url(Sequel-Regular.ttf);
+}
 .container
 {
     position: relative;
     top: 50px;
+    margin-bottom: 50px;
 }
 .cup
 {
@@ -187,8 +192,9 @@ button
     padding: 20px 30px;
     position: relative;
     top: 300px;
-    left: 50px;
+    left: 30px;
     margin-top: 20px;
+    margin-right: 30px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
@@ -199,6 +205,7 @@ button
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border-bottom: 50px;
+    font-family: Sequel;
 
 }
 button:hover {
