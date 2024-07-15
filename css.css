@@ -11,6 +11,10 @@ body{
     background: #607d8b;
     overflow: hidden;
 }
+@font-face {
+    font-family: Sequel;
+    src: url(Sequel-Regular.ttf);
+}
 
 .buttonright {
    
@@ -168,6 +172,7 @@ body{
 .button .mid {
     width: 20%;
     height: 35px;
+    font-family: Sequel;
 
 
 }
@@ -178,7 +183,6 @@ body{
 }
 
 .top-text {
-    
     font-family: Sequel;
     position: relative;
     top: 20px;
